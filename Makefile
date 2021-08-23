@@ -25,3 +25,9 @@ ch-two-lib-go:
 
 ch-two-libso-go:
 	cd ch2/lib/go; go build -buildmode=c-shared -o number.so;gcc -o a.out _test_main.c number.so;./a.out
+
+# chapter 3
+
+ch-three-tutorial:
+	# end with an empty line
+	cd ch3/tutorial; go tool compile -S pkg.go
