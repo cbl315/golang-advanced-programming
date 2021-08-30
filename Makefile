@@ -31,3 +31,7 @@ ch-two-libso-go:
 ch-three-tutorial:
 	# end with an empty line
 	cd ch3/tutorial; go tool compile -S pkg.go
+
+ch-four-tutorial:
+	# end with an empty line
+	cd ch4/tutorial; go test .
