@@ -35,3 +35,6 @@ ch-three-tutorial:
 ch-four-tutorial:
 	# end with an empty line
 	cd ch4/tutorial; go test .
+
+ch-four-proto:
+	cd ch4/protobuf; protoc --go-grpc_out=. hello.proto
