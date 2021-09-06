@@ -38,3 +38,9 @@ ch-four-tutorial:
 
 ch-four-proto:
 	cd ch4/protobuf; protoc --go-grpc_out=. hello.proto
+
+ch-four-grpc:
+	cd ch4/gRPC; protoc --go-grpc_out=. hello.proto --go_out=./;
+
+ch-four-pubsub:
+	cd ch4/pubsub; protoc --go-grpc_out=. pubsub.proto --go_out=./;
